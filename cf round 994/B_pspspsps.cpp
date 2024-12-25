@@ -8,8 +8,6 @@ void solve(){
         cin >> n;
         string s; 
         cin >> s;
-        bool valid=1;
-        bool found=0;
         int cp =0;
         int cs=0;
        if(s[0]=='s')s[0]='.';

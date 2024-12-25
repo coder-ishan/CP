@@ -18,7 +18,6 @@ void solve(){
         knows[q[i]-1]++;
         q[i]-=1;
     }
-    
     if(k==n){
         for(int i=0;i<m;i++){
             cout<<1;

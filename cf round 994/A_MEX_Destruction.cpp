@@ -9,29 +9,24 @@ void solve(){
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    
-    // Check for number of contiguous non-zero segments
-    int segments = 0;
-    bool in_segment = false;
-
+    int seg = 0;
+    bool inside = false;
     for(int i = 0; i < n; i++) {
         if(a[i] != 0) {
-            if(!in_segment) {
-                segments++;
-                in_segment = true;
+            if(!inside) {
+                seg++;
+                inside = true;
             }
         } else {
-            in_segment = false;
+            inside = false;
         }
     }
-
-    // Determine the result based on the number of segments
-    if(segments == 0) {
-        cout << "0" << endl; // All zeros
-    } else if(segments == 1) {
-        cout << "1" << endl; // One contiguous non-zero segment
+    if(seg == 0) {
+        cout << "0" << endl; 
+    } else if(seg == 1) {
+        cout << "1" << endl; 
     } else {
-        cout << "2" << endl; // More than one segment
+        cout << "2" << endl; 
     }
 }
 
