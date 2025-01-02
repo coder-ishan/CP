@@ -8,9 +8,6 @@ using namespace std;
 #define cyes cout << "Yes" << endl
 #define cno cout << "No" << endl
 
-void print(auto u) {
-    cout << u << "\n";
-}
 
 void solve() {
     int h,l,w;
