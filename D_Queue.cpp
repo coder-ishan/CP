@@ -5,6 +5,9 @@ using namespace std;
 #define cyes cout << "YES" << endl
 #define cno cout << "NO" << endl
 
+/// ADD to back of queue
+///for no WA
+
 void solve(){
     int n;
     cin>>n;
